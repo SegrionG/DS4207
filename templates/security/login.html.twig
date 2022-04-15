@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdrienController!{% endblock %}
+
+{% block body %}
+
+
+<br><br>
+<div class="card text-black bg-secondary mb-3 col-6 mx-auto" style="max-width: 20rem" margin="center";>
+  <div class="card-header">Informations</div>
+  <div class="card-body">
+    <h4 class="card-title">Login tapé : <strong>{{ login }}</strong> </h4>
+    <p class="card-text">Mot de passe tapé : {{ mdp }} <br> <u>Status : {{ message }} </u><br> </p>
+  </div>
+</div>
+
+{% endblock %}

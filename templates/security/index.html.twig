@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SecurityController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+</head>
+<div class="example-wrapper"><br><br>
+    <h1>Bienvenue au site web du DS du module M4207c!</h1>
+
+ 
+    <ul>
+        <li>Lien github : <code><a href="https://github.com/SegrionG">Mon Github</a></code></li>
+    </ul>
+  <br>
+  <form method="post" action="/clogin">
+    <fieldset>
+    <legend>Connexion :</legend>
+          <ul>
+          Identifiants compte de test :
+           <ul><li>Login : admin</li>
+          <li> Mot de passe : admin</li>
+          </ul><br>
+
+          <label for="username" class="form-label mt-4">Nom d'utilisateur :</label>
+          <input type="username" class="form-control" id="username" name="username" placeholder="Utilisateur">
+
+        <label for="password" class="form-label mt-4">Mot de passe :</label>
+        <input type="password" class="form-control" name="password" id="password" placeholder="Mot de passe">
+          <br><button type="submit" class="btn btn-primary">Soumettre</button>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+{% endblock %}
